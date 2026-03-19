@@ -79,7 +79,7 @@ export default function UploadModal({ onClose, onSuccess }: UploadModalProps) {
         >
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-border">
-            <h2 className="text-lg font-bold text-primary">Tạo bài đăng</h2>
+            <h2 className="text-lg font-bold text-primary">Create Post</h2>
             <button onClick={onClose} className="p-2 rounded-xl hover:bg-elevated transition-colors text-muted hover:text-primary">
               <X size={20} />
             </button>
@@ -110,8 +110,8 @@ export default function UploadModal({ onClose, onSuccess }: UploadModalProps) {
                     <ImagePlus size={24} className="text-accent" />
                   </div>
                   <div className="text-center">
-                    <p className="font-medium text-primary/80">Kéo thả ảnh vào đây</p>
-                    <p className="text-sm mt-1 text-muted">hoặc click để chọn · PNG, JPG, WebP tối đa 10MB</p>
+                    <p className="font-medium text-primary/80">Drag and drop an image here</p>
+                    <p className="text-sm mt-1 text-muted">or click to select · PNG, JPG, WebP up to 10MB</p>
                   </div>
                 </div>
               )}
@@ -143,7 +143,7 @@ export default function UploadModal({ onClose, onSuccess }: UploadModalProps) {
                 hover:bg-accent/80 disabled:opacity-40 disabled:cursor-not-allowed
                 transition-all hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2"
             >
-              {loading ? <><Loader2 size={16} className="animate-spin" /> Đang upload…</> : 'Đăng lên Pinboard'}
+              {loading ? <><Loader2 size={16} className="animate-spin" /> Uploading…</> : 'Upload to Pinboard'}
             </button>
           </div>
         </motion.div>

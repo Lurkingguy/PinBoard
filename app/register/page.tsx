@@ -172,7 +172,7 @@ export default function RegisterPage() {
               border border-border text-sm text-muted hover:text-primary hover:border-primary/30
               transition-all hover:scale-[1.01]"
           >
-            Tiếp tục với tư cách khách
+            Continue as Guest
           </Link>
         </motion.div>
       </div>

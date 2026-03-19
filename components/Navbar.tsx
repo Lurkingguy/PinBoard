@@ -94,7 +94,7 @@ export default function Navbar() {
                   <button
                     onClick={handleSignOut}
                     className="p-2 rounded-xl text-muted hover:text-primary hover:bg-elevated transition-all"
-                    title="Đăng xuất"
+                    title="Logout"
                   >
                     <LogOut size={18} />
                   </button>
@@ -118,7 +118,7 @@ export default function Navbar() {
               <button
                 onClick={() => setSettingsOpen(true)}
                 className="p-2 rounded-xl text-muted hover:text-primary hover:bg-elevated transition-all"
-                title="Cài đặt"
+                title="Setting"
               >
                 <Settings size={18} />
               </button>

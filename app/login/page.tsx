@@ -33,7 +33,7 @@ export default function LoginPage() {
             <span className="text-white font-bold text-3xl">P</span>
           </div>
           <h1 className="text-4xl font-extrabold text-primary mb-3 tracking-tight">Pinboard</h1>
-          <p className="text-muted text-lg leading-relaxed">Lưu lại những gì truyền cảm hứng cho bạn.</p>
+          <p className="text-muted text-lg leading-relaxed">Save what inspires you.</p>
           <div className="flex justify-center gap-2 mt-8">
             {['#4F8EF7','#2E2E2E','#6B6B6B','#E8E8E8'].map((c, i) => (
               <div key={i} className="w-2 h-2 rounded-full" style={{ background: c }} />
@@ -55,7 +55,7 @@ export default function LoginPage() {
             group-hover:border-accent/40 group-hover:bg-accent/5 transition-all">
             <ArrowLeft size={15} />
           </div>
-          <span className="hidden sm:inline">Về trang chủ</span>
+          <span className="hidden sm:inline">Back to home</span>
         </Link>
 
         <motion.div
@@ -72,8 +72,8 @@ export default function LoginPage() {
             <h1 className="text-2xl font-extrabold text-primary">Pinboard</h1>
           </div>
 
-          <h2 className="text-2xl font-bold text-primary mb-1">Chào mừng trở lại</h2>
-          <p className="text-muted text-sm mb-8">Đăng nhập vào tài khoản của bạn</p>
+          <h2 className="text-2xl font-bold text-primary mb-1">Welcome back</h2>
+          <p className="text-muted text-sm mb-8">Sign in to your account</p>
 
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
@@ -127,9 +127,9 @@ export default function LoginPage() {
           </form>
 
           <p className="text-center text-sm text-muted mt-6">
-            Chưa có tài khoản?{' '}
+            Don't have an account?{' '}
             <Link href="/register" className="text-accent hover:text-primary font-semibold transition-colors">
-              Đăng ký
+              Sign up
             </Link>
           </p>
 
@@ -145,7 +145,7 @@ export default function LoginPage() {
               border border-border text-sm text-muted hover:text-primary hover:border-primary/30
               transition-all hover:scale-[1.01]"
           >
-            Tiếp tục với tư cách khách
+            Continue as guest
           </Link>
         </motion.div>
       </div>

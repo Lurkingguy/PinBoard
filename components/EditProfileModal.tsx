@@ -85,7 +85,7 @@ export default function EditProfileModal({ user, onClose, onSuccess }: EditProfi
                 <p className="text-xs text-muted mt-0.5">{user.email}</p>
                 <button onClick={() => fileInputRef.current?.click()}
                   className="text-xs text-accent hover:text-primary transition-colors mt-1.5 underline underline-offset-2">
-                  Đổi ảnh đại diện
+                  Change profile picture
                 </button>
               </div>
               <input ref={fileInputRef} type="file" accept="image/*" className="hidden" onChange={handleAvatarChange} />
@@ -96,13 +96,13 @@ export default function EditProfileModal({ user, onClose, onSuccess }: EditProfi
             <div className="flex gap-3">
               <button onClick={onClose}
                 className="flex-1 py-2.5 rounded-xl border border-border text-sm text-muted hover:text-primary hover:bg-elevated transition-all">
-                Huỷ
+                Cancel
               </button>
               <button onClick={handleSave} disabled={loading || !avatarFile}
                 className="flex-1 py-2.5 rounded-xl bg-accent text-white text-sm font-semibold
                   hover:bg-accent/80 disabled:opacity-40 disabled:cursor-not-allowed
                   transition-all flex items-center justify-center gap-2">
-                {loading ? <><Loader2 size={15} className="animate-spin" /> Đang lưu…</> : <><Check size={15} /> Lưu</>}
+                {loading ? <><Loader2 size={15} className="animate-spin" /> Saving…</> : <><Check size={15} /> Save</>}
               </button>
             </div>
           </div>

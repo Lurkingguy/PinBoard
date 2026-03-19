@@ -171,7 +171,7 @@ export default function ProfilePage() {
                 <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl">🖼️</span>
                 </div>
-                <p className="text-muted text-sm">Chưa có bài đăng nào.</p>
+                <p className="text-muted text-sm">No posts yet.</p>
               </div>
             ) : (
               <div className="masonry-grid">

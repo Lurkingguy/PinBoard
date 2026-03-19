@@ -69,7 +69,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
               {/* ── Theme section ── */}
               <div>
                 <p className="text-xs font-semibold text-muted uppercase tracking-widest mb-3">
-                  Giao diện
+                  Theme
                 </p>
 
                 <div className="space-y-2">
@@ -97,7 +97,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                 </div>
 
                 <p className="text-xs text-muted mt-3 leading-relaxed">
-                  Chế độ <strong className="text-primary/60">Hệ thống</strong> tự động theo cài đặt dark/light mode của máy bạn.
+                  Theme <strong className="text-primary/60">System</strong> automatically follows your device's dark/light mode settings.
                 </p>
               </div>
 
@@ -107,7 +107,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
               {/* ── About section ── */}
               <div>
                 <p className="text-xs font-semibold text-muted uppercase tracking-widest mb-3">
-                  Về ứng dụng
+                  About the app
                 </p>
                 <div className="bg-elevated rounded-xl p-4 space-y-3">
                   <div className="flex items-center gap-2.5">
@@ -120,7 +120,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                     </div>
                   </div>
                   <p className="text-xs text-muted leading-relaxed">
-                    Ứng dụng lưu và chia sẻ ảnh theo phong cách Pinterest. Xây dựng với Next.js 14 + Supabase.
+                    A Pinterest-style image sharing app. Built with Next.js 14 + Supabase.
                   </p>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
             {/* Footer */}
             <div className="p-5 border-t border-border">
               <p className="text-xs text-muted text-center">
-                Made with ☕ using Next.js &amp; Supabase
+                Made by Timberblack using Next.js &amp; Supabase
               </p>
             </div>
           </motion.div>

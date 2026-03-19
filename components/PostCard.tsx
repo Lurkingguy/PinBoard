@@ -137,7 +137,7 @@ export default function PostCard({ post, currentUserId, onDelete, onCaptionUpdat
                         </button>
                       ) : (
                         <div className="px-3 py-2.5 space-y-2">
-                          <p className="text-xs text-muted">Chắc chưa?</p>
+                          <p className="text-xs text-muted">Are you sure?</p>
                           <div className="flex gap-1.5">
                             <button
                               onClick={e => { e.stopPropagation(); handleDelete() }}
