@@ -12,17 +12,6 @@ exports.id = "app/profile/[id]/page";
 exports.ids = ["app/profile/[id]/page"];
 exports.modules = {
 
-/***/ "./action-async-storage.external":
-/*!****************************************************************************!*\
-  !*** external "next/dist/client/components/action-async-storage.external" ***!
-  \****************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/client/components/action-async-storage.external");
-
-/***/ }),
-
 /***/ "../../client/components/action-async-storage.external":
 /*!*******************************************************************************!*\
   !*** external "next/dist/client/components/action-async-storage.external.js" ***!
@@ -34,17 +23,6 @@ module.exports = require("next/dist/client/components/action-async-storage.exter
 
 /***/ }),
 
-/***/ "./request-async-storage.external":
-/*!*****************************************************************************!*\
-  !*** external "next/dist/client/components/request-async-storage.external" ***!
-  \*****************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/client/components/request-async-storage.external");
-
-/***/ }),
-
 /***/ "../../client/components/request-async-storage.external":
 /*!********************************************************************************!*\
   !*** external "next/dist/client/components/request-async-storage.external.js" ***!
@@ -53,17 +31,6 @@ module.exports = require("next/dist/client/components/request-async-storage.exte
 
 "use strict";
 module.exports = require("next/dist/client/components/request-async-storage.external.js");
-
-/***/ }),
-
-/***/ "./static-generation-async-storage.external":
-/*!***************************************************************************************!*\
-  !*** external "next/dist/client/components/static-generation-async-storage.external" ***!
-  \***************************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/client/components/static-generation-async-storage.external");
 
 /***/ }),
 
@@ -214,7 +181,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createClient: () => (/* binding */ createClient)\n/* harmony export */ });\n/* harmony import */ var _supabase_ssr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/ssr */ \"(ssr)/./node_modules/@supabase/ssr/dist/index.mjs\");\n// lib/supabase.ts\n// This file sets up the Supabase client for use throughout the app.\n// We create two clients:\n// 1. A browser client for use in Client Components\n// 2. A server client for use in Server Components and API routes\n\n// Browser client — used in 'use client' components\nfunction createClient() {\n    return (0,_supabase_ssr__WEBPACK_IMPORTED_MODULE_0__.createBrowserClient)(\"https://spjvbcsyopbtuicbrfnc.supabase.co\", \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNwanZiY3N5b3BidHVpY2JyZm5jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5MDM0NDQsImV4cCI6MjA4OTQ3OTQ0NH0.Hy2oTL85wP7NhjU0YMtfSBLkggWBYEmtrWhihSACe6c\");\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9saWIvc3VwYWJhc2UudHMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSxrQkFBa0I7QUFDbEIsb0VBQW9FO0FBQ3BFLHlCQUF5QjtBQUN6QixtREFBbUQ7QUFDbkQsaUVBQWlFO0FBRWQ7QUFFbkQsbURBQW1EO0FBQzVDLFNBQVNDO0lBQ2QsT0FBT0Qsa0VBQW1CQSxDQUN4QkUsMENBQW9DLEVBQ3BDQSxrTkFBeUM7QUFFN0MiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9waW5ib2FyZC8uL2xpYi9zdXBhYmFzZS50cz9jOTlmIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGxpYi9zdXBhYmFzZS50c1xuLy8gVGhpcyBmaWxlIHNldHMgdXAgdGhlIFN1cGFiYXNlIGNsaWVudCBmb3IgdXNlIHRocm91Z2hvdXQgdGhlIGFwcC5cbi8vIFdlIGNyZWF0ZSB0d28gY2xpZW50czpcbi8vIDEuIEEgYnJvd3NlciBjbGllbnQgZm9yIHVzZSBpbiBDbGllbnQgQ29tcG9uZW50c1xuLy8gMi4gQSBzZXJ2ZXIgY2xpZW50IGZvciB1c2UgaW4gU2VydmVyIENvbXBvbmVudHMgYW5kIEFQSSByb3V0ZXNcblxuaW1wb3J0IHsgY3JlYXRlQnJvd3NlckNsaWVudCB9IGZyb20gJ0BzdXBhYmFzZS9zc3InXG5cbi8vIEJyb3dzZXIgY2xpZW50IOKAlCB1c2VkIGluICd1c2UgY2xpZW50JyBjb21wb25lbnRzXG5leHBvcnQgZnVuY3Rpb24gY3JlYXRlQ2xpZW50KCkge1xuICByZXR1cm4gY3JlYXRlQnJvd3NlckNsaWVudChcbiAgICBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TVVBBQkFTRV9VUkwhLFxuICAgIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NVUEFCQVNFX0FOT05fS0VZIVxuICApXG59XG4iXSwibmFtZXMiOlsiY3JlYXRlQnJvd3NlckNsaWVudCIsImNyZWF0ZUNsaWVudCIsInByb2Nlc3MiLCJlbnYiLCJORVhUX1BVQkxJQ19TVVBBQkFTRV9VUkwiLCJORVhUX1BVQkxJQ19TVVBBQkFTRV9BTk9OX0tFWSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./lib/supabase.ts\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createClient: () => (/* binding */ createClient)\n/* harmony export */ });\n/* harmony import */ var _supabase_ssr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/ssr */ \"(ssr)/./node_modules/@supabase/ssr/dist/module/index.js\");\n// lib/supabase.ts\n// This file sets up the Supabase client for use throughout the app.\n// We create two clients:\n// 1. A browser client for use in Client Components\n// 2. A server client for use in Server Components and API routes\n\n// Browser client — used in 'use client' components\nfunction createClient() {\n    return (0,_supabase_ssr__WEBPACK_IMPORTED_MODULE_0__.createBrowserClient)(\"https://spjvbcsyopbtuicbrfnc.supabase.co\", \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNwanZiY3N5b3BidHVpY2JyZm5jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5MDM0NDQsImV4cCI6MjA4OTQ3OTQ0NH0.Hy2oTL85wP7NhjU0YMtfSBLkggWBYEmtrWhihSACe6c\");\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9saWIvc3VwYWJhc2UudHMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSxrQkFBa0I7QUFDbEIsb0VBQW9FO0FBQ3BFLHlCQUF5QjtBQUN6QixtREFBbUQ7QUFDbkQsaUVBQWlFO0FBRWQ7QUFFbkQsbURBQW1EO0FBQzVDLFNBQVNDO0lBQ2QsT0FBT0Qsa0VBQW1CQSxDQUN4QkUsMENBQW9DLEVBQ3BDQSxrTkFBeUM7QUFFN0MiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9waW5ib2FyZC8uL2xpYi9zdXBhYmFzZS50cz9jOTlmIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGxpYi9zdXBhYmFzZS50c1xuLy8gVGhpcyBmaWxlIHNldHMgdXAgdGhlIFN1cGFiYXNlIGNsaWVudCBmb3IgdXNlIHRocm91Z2hvdXQgdGhlIGFwcC5cbi8vIFdlIGNyZWF0ZSB0d28gY2xpZW50czpcbi8vIDEuIEEgYnJvd3NlciBjbGllbnQgZm9yIHVzZSBpbiBDbGllbnQgQ29tcG9uZW50c1xuLy8gMi4gQSBzZXJ2ZXIgY2xpZW50IGZvciB1c2UgaW4gU2VydmVyIENvbXBvbmVudHMgYW5kIEFQSSByb3V0ZXNcblxuaW1wb3J0IHsgY3JlYXRlQnJvd3NlckNsaWVudCB9IGZyb20gJ0BzdXBhYmFzZS9zc3InXG5cbi8vIEJyb3dzZXIgY2xpZW50IOKAlCB1c2VkIGluICd1c2UgY2xpZW50JyBjb21wb25lbnRzXG5leHBvcnQgZnVuY3Rpb24gY3JlYXRlQ2xpZW50KCkge1xuICByZXR1cm4gY3JlYXRlQnJvd3NlckNsaWVudChcbiAgICBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TVVBBQkFTRV9VUkwhLFxuICAgIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NVUEFCQVNFX0FOT05fS0VZIVxuICApXG59XG4iXSwibmFtZXMiOlsiY3JlYXRlQnJvd3NlckNsaWVudCIsImNyZWF0ZUNsaWVudCIsInByb2Nlc3MiLCJlbnYiLCJORVhUX1BVQkxJQ19TVVBBQkFTRV9VUkwiLCJORVhUX1BVQkxJQ19TVVBBQkFTRV9BTk9OX0tFWSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./lib/supabase.ts\n");
 
 /***/ }),
 
@@ -249,20 +216,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
-/* harmony export */   __esModule: () => (/* binding */ __esModule),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`E:\Tự học\Claude AI\pinboard\app\profile\[id]\page.tsx`)
-
-// Accessing the __esModule property and exporting $$typeof are required here.
-// The __esModule getter forces the proxy target to create the default export
-// and the $$typeof value is for rendering logic to determine if the module
-// is a client boundary.
-const { __esModule, $$typeof } = proxy;
-const __default__ = proxy.default;
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`E:\Tự học\Claude AI\pinboard\app\profile\[id]\page.tsx#default`));
 
@@ -276,7 +232,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@supabase","vendor-chunks/framer-motion","vendor-chunks/motion-dom","vendor-chunks/lucide-react","vendor-chunks/tslib","vendor-chunks/iceberg-js","vendor-chunks/ramda","vendor-chunks/next-themes","vendor-chunks/cookie","vendor-chunks/@swc","vendor-chunks/motion-utils"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fprofile%2F%5Bid%5D%2Fpage&page=%2Fprofile%2F%5Bid%5D%2Fpage&appPaths=%2Fprofile%2F%5Bid%5D%2Fpage&pagePath=private-next-app-dir%2Fprofile%2F%5Bid%5D%2Fpage.tsx&appDir=E%3A%5CT%E1%BB%B1%20h%E1%BB%8Dc%5CClaude%20AI%5Cpinboard%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=E%3A%5CT%E1%BB%B1%20h%E1%BB%8Dc%5CClaude%20AI%5Cpinboard&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@supabase","vendor-chunks/framer-motion","vendor-chunks/motion-dom","vendor-chunks/lucide-react","vendor-chunks/tslib","vendor-chunks/iceberg-js","vendor-chunks/cookie","vendor-chunks/next-themes","vendor-chunks/@swc","vendor-chunks/motion-utils"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fprofile%2F%5Bid%5D%2Fpage&page=%2Fprofile%2F%5Bid%5D%2Fpage&appPaths=%2Fprofile%2F%5Bid%5D%2Fpage&pagePath=private-next-app-dir%2Fprofile%2F%5Bid%5D%2Fpage.tsx&appDir=E%3A%5CT%E1%BB%B1%20h%E1%BB%8Dc%5CClaude%20AI%5Cpinboard%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=E%3A%5CT%E1%BB%B1%20h%E1%BB%8Dc%5CClaude%20AI%5Cpinboard&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

@@ -97,7 +97,7 @@ function HomeFeed() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-primary italic mb-2 tracking-tight">
-            Discover &amp; Inspire
+            Discovery &amp; Inspire
           </h1>
           <p className="text-muted text-sm">A curated collection of beautiful things</p>
         </motion.div>
