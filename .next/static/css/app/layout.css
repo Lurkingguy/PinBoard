@@ -776,6 +776,12 @@ video {
 .top-2\.5 {
   top: 0.625rem;
 }
+.left-5 {
+  left: 1.25rem;
+}
+.top-5 {
+  top: 1.25rem;
+}
 .z-10 {
   z-index: 10;
 }
@@ -839,6 +845,9 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mt-4 {
+  margin-top: 1rem;
 }
 .line-clamp-2 {
   overflow: hidden;
