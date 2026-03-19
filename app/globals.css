@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Dark theme (mặc định) ── */
+:root {
+  --base:     #0F0F0F;
+  --surface:  #1A1A1A;
+  --elevated: #242424;
+  --border:   #2E2E2E;
+  --muted:    #6B6B6B;
+  --primary:  #E8E8E8;
+  --accent:   #4F8EF7;
+  --danger:   #F75555;
+}
+
+/* ── Light theme ── */
+:root[class~="light"] {
+  --base:     #F5F5F5;
+  --surface:  #FFFFFF;
+  --elevated: #EFEFEF;
+  --border:   #E0E0E0;
+  --muted:    #9E9E9E;
+  --primary:  #1A1A1A;
+  --accent:   #2563EB;
+  --danger:   #EF4444;
+}
+
+html { scroll-behavior: smooth; }
+
+/* Scrollbar */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: var(--base); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Masonry grid */
+.masonry-grid { columns: 2; column-gap: 0.75rem; }
+@media (min-width: 640px)  { .masonry-grid { columns: 3; } }
+@media (min-width: 1024px) { .masonry-grid { columns: 4; } }
+@media (min-width: 1280px) { .masonry-grid { columns: 5; } }
+.masonry-item { break-inside: avoid; margin-bottom: 0.75rem; }
+
+/* Skeleton shimmer */
+.skeleton {
+  background: linear-gradient(90deg, var(--surface) 25%, var(--elevated) 50%, var(--surface) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeUp { animation: fadeUp 0.4s ease-out forwards; }
